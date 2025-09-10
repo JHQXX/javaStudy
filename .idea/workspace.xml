@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="feat : 尚硅谷-Java-数组">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/chapter05_array/src/com/atguigu1/one/exer2/ArrayExerEnglishTranslation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/chapter05_array/src/com/atguigu1/one/exer2/ArrayExerEnglishTranslation.java" afterDir="false" />
     </list>
@@ -29,12 +30,12 @@
     &quot;assignee&quot;: &quot;JHQXX&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:JHQXX/javaStudy.git&quot;,
-    &quot;accountId&quot;: &quot;1c63b4eb-78e0-4ec8-bfde-590b40504982&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JHQXX/javaStudy.git",
+    "accountId": "18256aff-bfee-4603-b161-abdb2b9b61fd"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -46,23 +47,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/project_lee/javaStudy/src/main/java/top/lovebegetslover/javase&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/project_lee/javaStudy/src/main/java/top/lovebegetslover/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.ArrayExer.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/programming/lee/javaStudy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/project_lee/javaStudy/src/main/java/top/lovebegetslover/Main.java",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.ArrayExer.executor": "Run",
+    "应用程序.ArrayExerEnglishTranslation.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase" />
@@ -75,7 +80,7 @@
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\array" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.ArrayExerEnglishTranslation">
     <configuration name="ArrayExer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.chapter05_array.src.com.atguigu1.one.exer1.ArrayExer" />
       <module name="javaStudy" />
@@ -89,8 +94,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ArrayExerEnglishTranslation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.chapter05_array.src.com.atguigu1.one.exer2.ArrayExerEnglishTranslation" />
+      <module name="javaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lovebegetslover.javase.chapter05_array.src.com.atguigu1.one.exer2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ArrayExerEnglishTranslation" />
         <item itemvalue="应用程序.ArrayExer" />
       </list>
     </recent_temporary>
@@ -114,6 +133,7 @@
       <workItem from="1756811356133" duration="3000" />
       <workItem from="1757385391244" duration="2857000" />
       <workItem from="1757397898774" duration="358000" />
+      <workItem from="1757477708750" duration="1140000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 尚硅谷-Java-数组">
       <option name="closed" value="true" />
