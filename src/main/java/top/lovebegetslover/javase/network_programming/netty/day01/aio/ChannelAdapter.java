@@ -1,5 +1,6 @@
 package top.lovebegetslover.javase.network_programming.netty.day01.aio;
 
+import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousSocketChannel;
 import java.nio.channels.CompletionHandler;
@@ -42,14 +43,24 @@ public abstract class ChannelAdapter implements CompletionHandler<Integer,Object
                     //
                     if (result == -1){
                         try {
-
+                            channelInactive(new ChannelHandler(channel,charset));
+                            channel.close();
+                        }catch (IOException e){
+                            e.printStackTrace();
                         }
+                        return;
                     }
+                    //缓冲区切换
+                    buffer.flip();
+                    channelRead(new ChannelHandler(channel,charset),charset.decode(buffer));
+                    //清空缓冲区
+                    buffer.clear();
+                    channel.read(buffer,timeout,TimeUnit.SECONDS,null,this);
                 }
 
                 @Override
                 public void failed(Throwable exc, Object attachment) {
-
+                    exc.printStackTrace();
                 }
             });
 

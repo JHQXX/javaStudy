@@ -18,10 +18,11 @@ public class AioClient {
         //创建
         AsynchronousSocketChannel socketChannel = AsynchronousSocketChannel.open();
         //连接地址 端口
-        Future<Void> future = socketChannel.connect(new InetSocketAddress("192.168.1.116", 4399));
+        Future<Void> future = socketChannel.connect(new InetSocketAddress("192.168.137.1", 4399));
         System.out.println("启动连接");
         future.get();
         socketChannel.read(ByteBuffer.allocate(1024),null ,new AioClientHandler(socketChannel, Charset.forName("GBK")));
+        Thread.sleep(100000);
     }
 
 }
