@@ -18,7 +18,7 @@ public class ChannelHandler {
         this.charset = charset;
     }
 
-    public void writeAndFlush(Object msg){
+    public void writeAndFlush(Object msg) {
         byte[] bytes = msg.toString().getBytes(charset);
         ByteBuffer writeBuffer = ByteBuffer.allocate(bytes.length);
         writeBuffer.put(bytes);
@@ -26,7 +26,9 @@ public class ChannelHandler {
         channel.write(writeBuffer);
     }
 
-    public AsynchronousSocketChannel channel(){
+
+
+    public AsynchronousSocketChannel channel() {
         return channel;
     }
 

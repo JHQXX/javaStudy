@@ -4,32 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="feat : 尚硅谷-Java-数组">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/runoob/Persson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/runoob/action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/runoob/java_polymorphism/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/runoob/java_polymorphism/Salary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/runoob/java_polymorphism/VirtualDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/runoob/java_polymorphism/java_polymorphism_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/runoob/person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/runoob/reflectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/runoob/serialization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/xfg/juc/LambdaThreadExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/xfg/juc/RunnableExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/xfg/juc/ThreadExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/xfg/juc/ThreadStateExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/xfg/juc/UnsafeCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/xfg/juc/VisibilityDemo.java" afterDir="false" />
+    <list default="true" id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="feat : aio">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/ChannelAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/ChannelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/server/BioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/server/BioServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/ChannelAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/ChannelAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/ChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/ChannelHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/ChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/ChannelInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/server/AioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/server/AioServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/server/AioServerChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/server/AioServerChannelInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/server/AioServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/server/AioServerHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +38,12 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/JHQXX/javaStudy.git&quot;,
-    &quot;accountId&quot;: &quot;1c63b4eb-78e0-4ec8-bfde-590b40504982&quot;
+    &quot;accountId&quot;: &quot;18256aff-bfee-4603-b161-abdb2b9b61fd&quot;
   }
 }</component>
+  <component name="PerforceDirect.Settings">
+    <option name="CHARSET" value="无" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -69,30 +55,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/programming/lee/javaStudy",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/project_lee/javaStudy/src/main/java/top/lovebegetslover/Main.java",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.AioClient.executor": "Run",
-    "应用程序.AioServer.executor": "Run",
-    "应用程序.ArrayExer.executor": "Run",
-    "应用程序.ArrayExerEnglishTranslation.executor": "Run",
-    "应用程序.ArrayExerStudentLeve.executor": "Debug"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/programming/lee/javaStudy&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/project_lee/javaStudy/src/main/java/top/lovebegetslover/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.AioClient.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.AioServer.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.ArrayExer.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.ArrayExerEnglishTranslation.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.ArrayExerStudentLeve.executor&quot;: &quot;Debug&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase" />
@@ -105,7 +91,7 @@
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\array" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.AioClient">
+  <component name="RunManager" selected="应用程序.BioClient">
     <configuration name="AioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.aio.client.AioClient" />
       <module name="javaStudy" />
@@ -132,32 +118,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayExer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.chapter05_array.src.com.atguigu1.one.exer1.ArrayExer" />
-      <module name="javaStudy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.lovebegetslover.javase.chapter05_array.src.com.atguigu1.one.exer1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayExerEnglishTranslation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.chapter05_array.src.com.atguigu1.one.exer2.ArrayExerEnglishTranslation" />
-      <module name="javaStudy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.lovebegetslover.javase.chapter05_array.src.com.atguigu1.one.exer2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ArrayExerStudentLeve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.chapter05_array.src.com.atguigu1.one.exer3.ArrayExerStudentLeve" />
       <module name="javaStudy" />
@@ -171,13 +131,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.bio.client.BioClient" />
+      <module name="javaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day01.bio.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.bio.server.BioServer" />
+      <module name="javaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day01.bio.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.BioClient" />
+        <item itemvalue="应用程序.BioServer" />
         <item itemvalue="应用程序.AioClient" />
         <item itemvalue="应用程序.AioServer" />
         <item itemvalue="应用程序.ArrayExerStudentLeve" />
-        <item itemvalue="应用程序.ArrayExerEnglishTranslation" />
-        <item itemvalue="应用程序.ArrayExer" />
       </list>
     </recent_temporary>
   </component>
@@ -202,6 +188,7 @@
       <workItem from="1757397898774" duration="358000" />
       <workItem from="1757477708750" duration="4326000" />
       <workItem from="1757652254505" duration="600000" />
+      <workItem from="1761714051545" duration="2544000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 尚硅谷-Java-数组">
       <option name="closed" value="true" />
@@ -219,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757479239797</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat : aio">
+      <option name="closed" value="true" />
+      <created>1761630146787</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761630146787</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +222,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat : 尚硅谷-Java-数组" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 尚硅谷-Java-数组" />
+    <MESSAGE value="feat : aio" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : aio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
