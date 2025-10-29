@@ -1,6 +1,5 @@
 package top.lovebegetslover.javase.network_programming.netty.day01.aio.client;
 
-import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousSocketChannel;

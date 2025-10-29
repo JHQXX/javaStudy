@@ -19,12 +19,16 @@ public class AioServer extends Thread{
     @Override
     public void run() {
         try {
+            //使用多线程创建--打开异步服务器嵌套窗口
             serverSocketChannel = AsynchronousServerSocketChannel.open(AsynchronousChannelGroup.withCachedThreadPool(Executors.newCachedThreadPool(), 10));
+            //绑定端口
             serverSocketChannel.bind(new InetSocketAddress(4399));
             System.out.println("itstack-demo-netty server start done.");
             //等待
             CountDownLatch latch = new CountDownLatch(1);
+            //this 当前AioServer 的实例对象  后面是回调处理器
             serverSocketChannel.accept(this,new AioServerChannelInitializer());
+            //永久等待 因为计算器不会变为0
             latch.await();
         }catch (Exception e){
             e.printStackTrace();
@@ -35,6 +39,7 @@ public class AioServer extends Thread{
     }
 
     public static void main(String[] args) {
+        //启动服务 该线程会自动执行run 方法
         new AioServer().start();
     }
 }
