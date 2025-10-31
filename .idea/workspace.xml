@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="feat : aio">
+    <list default="true" id="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" name="nio" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/ChannelAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/ChannelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/client/NioClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/client/NioClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/server/NioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/server/NioServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/ChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/ChannelHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClientHandler.java" afterDir="false" />
+    </list>
+    <list id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClientHandler.java" afterDir="false" />
@@ -21,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -34,12 +46,12 @@
     &quot;assignee&quot;: &quot;JHQXX&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/JHQXX/javaStudy.git&quot;,
-    &quot;accountId&quot;: &quot;18256aff-bfee-4603-b161-abdb2b9b61fd&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JHQXX/javaStudy.git",
+    "accountId": "1c63b4eb-78e0-4ec8-bfde-590b40504982"
   }
-}</component>
+}]]></component>
   <component name="PerforceDirect.Settings">
     <option name="CHARSET" value="无" />
   </component>
@@ -76,7 +88,8 @@
     "应用程序.ArrayExer.executor": "Run",
     "应用程序.ArrayExerEnglishTranslation.executor": "Run",
     "应用程序.ArrayExerStudentLeve.executor": "Debug",
-    "应用程序.BioServer.executor": "Run"
+    "应用程序.BioServer.executor": "Debug",
+    "应用程序.NioServer.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -91,7 +104,7 @@
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\array" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.BioServer">
+  <component name="RunManager" selected="应用程序.NioServer">
     <configuration name="AioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.aio.client.AioClient" />
       <module name="javaStudy" />
@@ -111,19 +124,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day01.aio.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayExerStudentLeve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.chapter05_array.src.com.atguigu1.one.exer3.ArrayExerStudentLeve" />
-      <module name="javaStudy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.lovebegetslover.javase.chapter05_array.src.com.atguigu1.one.exer3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,13 +157,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.nio.server.NioServer" />
+      <module name="javaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day01.nio.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.NioServer" />
         <item itemvalue="应用程序.BioServer" />
         <item itemvalue="应用程序.BioClient" />
         <item itemvalue="应用程序.AioClient" />
         <item itemvalue="应用程序.AioServer" />
-        <item itemvalue="应用程序.ArrayExerStudentLeve" />
       </list>
     </recent_temporary>
   </component>
@@ -179,6 +192,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="" />
+      <changelist id="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" name="nio" comment="" />
       <created>1756811355061</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -189,6 +203,7 @@
       <workItem from="1757477708750" duration="4326000" />
       <workItem from="1757652254505" duration="600000" />
       <workItem from="1761714051545" duration="2544000" />
+      <workItem from="1761876706202" duration="7848000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 尚硅谷-Java-数组">
       <option name="closed" value="true" />

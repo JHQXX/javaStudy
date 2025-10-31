@@ -1,16 +1,20 @@
-package top.lovebegetslover.javase.network_programming.netty.day01.bio;
+package top.lovebegetslover.javase.network_programming.netty.day01.nio;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.net.Socket;
 import java.nio.ByteBuffer;
+import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
 
 /**
- * handler 处理者
- */
+ * Handler 处理者
+ * @Author: Lee
+ * @Description: TODO
+ * @DateTime: 2025/10/31 上午11:21
+ **/
 public class ChannelHandler {
+
 
     private SocketChannel channel;
 
@@ -24,10 +28,11 @@ public class ChannelHandler {
     public void writeAndFlush(Object msg) {
         OutputStream out = null;
         try {
-            //拿取信息字节 由于同步不需要 buffer 缓存
-            out = channel.socket().getOutputStream();
-            out.write(msg.toString().getBytes(charset));
-            out.flush();
+            byte[] bytes = msg.toString().getBytes(charset);
+            ByteBuffer writeBuffer = ByteBuffer.allocate(bytes.length);
+            writeBuffer.put(bytes);
+            writeBuffer.flip();
+            channel.write(writeBuffer);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -41,4 +46,6 @@ public class ChannelHandler {
     public void setChannel(SocketChannel channel){
         this.channel = channel;
     }
+
+
 }

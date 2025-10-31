@@ -19,11 +19,9 @@ public class BioClientHandler extends ChannelAdapter {
     //建立链接的时候处理的事件
     @Override
     public void channelActive(ChannelHandler ctx) {
-
         //思考一个问题 为啥使用 socketChannel 和 socket 两者 在使用同一个方法的时候 前者需要抛出异常
         System.out.println("链接报告LocalAddress: " + ctx.channel().socket().getLocalAddress());
         ctx.writeAndFlush("你好！ 我是BIO 处理器 msg for you \r\n");
-
     }
 
     //发生读取事件的处理
