@@ -4,25 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" name="nio" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/ChannelAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/ChannelHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/client/NioClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/client/NioClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/server/NioServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/nio/server/NioServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/ChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/ChannelHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClientHandler.java" afterDir="false" />
+    <list default="true" id="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" name="nio" comment="nio 实现">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/bookTest/BIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/bookTest/ChannelFutureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <list id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/client/AioClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/server/AioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/aio/server/AioServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/ChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/ChannelHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/server/BioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/server/BioServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +42,28 @@
     "accountId": "1c63b4eb-78e0-4ec8-bfde-590b40504982"
   }
 }]]></component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="6" end1="15" start2="6" end2="10" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="19" end1="25" start2="14" end2="14" changelist="ad13bd04-9962-4a2f-88b2-397ce585739f" />
+        <range start1="91" end1="91" start2="80" end2="81" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="106" end1="107" start2="96" end2="97" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="120" end1="122" start2="110" end2="112" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="125" end1="126" start2="115" end2="116" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="133" end1="135" start2="123" end2="125" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="138" end1="139" start2="128" end2="129" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="146" end1="148" start2="136" end2="138" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="151" end1="152" start2="141" end2="142" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="174" end1="174" start2="164" end2="165" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="178" end1="179" start2="169" end2="169" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="205" end1="206" start2="195" end2="196" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="231" end1="232" start2="221" end2="238" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="240" end1="241" start2="246" end2="249" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="249" end1="254" start2="257" end2="257" changelist="ad13bd04-9962-4a2f-88b2-397ce585739f" />
+      </ranges>
+    </file>
+  </component>
   <component name="PerforceDirect.Settings">
     <option name="CHARSET" value="无" />
   </component>
@@ -89,6 +101,7 @@
     "应用程序.ArrayExerEnglishTranslation.executor": "Run",
     "应用程序.ArrayExerStudentLeve.executor": "Debug",
     "应用程序.BioServer.executor": "Debug",
+    "应用程序.ChannelFutureTest.executor": "Run",
     "应用程序.NioServer.executor": "Run"
   }
 }]]></component>
@@ -104,26 +117,13 @@
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\array" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.NioServer">
+  <component name="RunManager" selected="应用程序.ChannelFutureTest">
     <configuration name="AioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.aio.client.AioClient" />
       <module name="javaStudy" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day01.aio.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.aio.server.AioServer" />
-      <module name="javaStudy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day01.aio.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,6 +157,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ChannelFutureTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.bookTest.ChannelFutureTest" />
+      <module name="javaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.bookTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.nio.server.NioServer" />
       <module name="javaStudy" />
@@ -172,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.ChannelFutureTest" />
         <item itemvalue="应用程序.NioServer" />
         <item itemvalue="应用程序.BioServer" />
         <item itemvalue="应用程序.BioClient" />
         <item itemvalue="应用程序.AioClient" />
-        <item itemvalue="应用程序.AioServer" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +216,7 @@
       <workItem from="1757477708750" duration="4326000" />
       <workItem from="1757652254505" duration="600000" />
       <workItem from="1761714051545" duration="2544000" />
-      <workItem from="1761876706202" duration="7848000" />
+      <workItem from="1761876706202" duration="12628000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 尚硅谷-Java-数组">
       <option name="closed" value="true" />
@@ -229,7 +242,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761630146787</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞">
+      <option name="closed" value="true" />
+      <created>1761719396222</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761719396222</updated>
+    </task>
+    <task id="LOCAL-00005" summary="nio 实现">
+      <option name="closed" value="true" />
+      <created>1761892472929</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761892472929</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +267,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat : 尚硅谷-Java-数组" />
     <MESSAGE value="feat : aio" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : aio" />
+    <MESSAGE value="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞" />
+    <MESSAGE value="nio 实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="nio 实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
