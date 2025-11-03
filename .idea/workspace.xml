@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f50d8206-3ea1-4033-a8e9-cad02ac82a33" name="NettyServer群发消息" comment="NettyServer群发消息">
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/bookTest/Echo/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/bookTest/Echo/EchoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/server/BioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/server/BioServer.java" afterDir="false" />
+    <list default="true" id="f50d8206-3ea1-4033-a8e9-cad02ac82a33" name="NettyClient 半包粘包处理，编码解码处理，收发数据方式" comment="NettyClient 半包粘包处理，编码解码处理，收发数据方式">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/client/MyClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/client/MyChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/client/MyChannelInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/client/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/client/NettyClient.java" afterDir="false" />
     </list>
     <list id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞" />
     <option name="SHOW_DIALOG" value="false" />
@@ -282,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762139176452</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="NettyClient">
+      <option name="closed" value="true" />
+      <created>1762144167063</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1762144167063</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +304,8 @@
     <MESSAGE value="NettyServer接收器 解码器 换行器 半包粘包解决" />
     <MESSAGE value="NettyServer 收发数据" />
     <MESSAGE value="NettyServer 字符串编码器" />
-    <option name="LAST_COMMIT_MESSAGE" value="NettyServer 字符串编码器" />
+    <MESSAGE value="NettyClient" />
+    <option name="LAST_COMMIT_MESSAGE" value="NettyClient" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
