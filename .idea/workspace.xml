@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f50d8206-3ea1-4033-a8e9-cad02ac82a33" name="NettyClient 半包粘包处理，编码解码处理，收发数据方式" comment="关于ChannelOutboundHandlerAdapter简单使用">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day04/client/MyChannelInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day04/client/MyClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day04/client/NettyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day04/server/MyChannelInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day04/server/MyServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day04/server/NettyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f50d8206-3ea1-4033-a8e9-cad02ac82a33" name="NettyClient 半包粘包处理，编码解码处理，收发数据方式" comment="netty upd通信">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day05/server/MyChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day05/server/MyServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day05/server/NettyServer.java" afterDir="false" />
     </list>
     <list id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +79,8 @@
     "应用程序.top.lovebegetslover.javase.network_programming.netty.day03.client.NettyClient.executor": "Run",
     "应用程序.top.lovebegetslover.javase.network_programming.netty.day03.server.NettyServer.executor": "Run",
     "应用程序.top.lovebegetslover.javase.network_programming.netty.day04.client.NettyClient.executor": "Run",
-    "应用程序.top.lovebegetslover.javase.network_programming.netty.day04.server.NettyServer.executor": "Run"
+    "应用程序.top.lovebegetslover.javase.network_programming.netty.day04.server.NettyServer.executor": "Run",
+    "应用程序.top.lovebegetslover.javase.network_programming.netty.day05.server.NettyServer.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -101,20 +98,7 @@
       <recent name="top.lovebegetslover.javase.network_programming.netty.day03.client" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.top.lovebegetslover.javase.network_programming.netty.day04.server.NettyServer">
-    <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day02.server.NettyServer" />
-      <module name="javaStudy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day02.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.top.lovebegetslover.javase.network_programming.netty.day05.server.NettyServer">
     <configuration name="top.lovebegetslover.javase.network_programming.netty.day03.client.NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day03.client.NettyClient" />
       <module name="javaStudy" />
@@ -167,13 +151,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="top.lovebegetslover.javase.network_programming.netty.day05.server.NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day05.server.NettyServer" />
+      <module name="javaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day05.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.top.lovebegetslover.javase.network_programming.netty.day05.server.NettyServer" />
         <item itemvalue="应用程序.top.lovebegetslover.javase.network_programming.netty.day04.server.NettyServer" />
         <item itemvalue="应用程序.top.lovebegetslover.javase.network_programming.netty.day04.client.NettyClient" />
         <item itemvalue="应用程序.top.lovebegetslover.javase.network_programming.netty.day03.client.NettyClient" />
         <item itemvalue="应用程序.top.lovebegetslover.javase.network_programming.netty.day03.server.NettyServer" />
-        <item itemvalue="应用程序.NettyServer" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762154024351</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="netty upd通信">
+      <option name="closed" value="true" />
+      <created>1762158317474</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1762158317474</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +340,8 @@
     <MESSAGE value="NettyClient" />
     <MESSAGE value="NettyClient半包粘包处理、编码解码处理、收发数据方式" />
     <MESSAGE value="关于ChannelOutboundHandlerAdapter简单使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="关于ChannelOutboundHandlerAdapter简单使用" />
+    <MESSAGE value="netty upd通信" />
+    <option name="LAST_COMMIT_MESSAGE" value="netty upd通信" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
