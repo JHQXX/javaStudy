@@ -18,6 +18,8 @@ import java.util.Date;
 public class MyServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        //建立连接以后,把客户放入Group中
+        ChannelHandler.channelGroup.add(ctx.channel());
         SocketChannel channel = (SocketChannel) ctx.channel();
         System.out.println("连接开始：");
         System.out.println("有一条客户端连接到服务端");
@@ -26,11 +28,6 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
         System.out.println("连接完成");
         //通知客户端连接建立成功
         String str = "连接成功" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())+ " " + channel.localAddress().getHostString() + "\r\n";
-        //由于使用了编码器,那么我们就不用再进行编码了
-//        ByteBuf buf = Unpooled.buffer(str.getBytes().length);
-//        //使用GBK进行编码
-//        buf.writeBytes(str.getBytes("GBK"));
-        //推向客户端
         ctx.writeAndFlush(str);
     }
 
@@ -42,27 +39,18 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         System.out.println("客户端断开连接"+ctx.channel().localAddress().toString());
+        //当有客户端退出后,从ChannelGroup中移出
+        ChannelHandler.channelGroup.remove(ctx.channel());
     }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        //接收消息 版本1.0 无自动解码器
-//        ByteBuf buf = (ByteBuf) msg;
-//        byte[] bytes = new byte[buf.readableBytes()];
-//        buf.readBytes(bytes);
-//        System.out.println("接收到消息"+new Date());
-//        System.out.println(new String (bytes, Charset.forName("GBK")));
-//        System.out.println("接收到消息"+new Date()+" "+buf.toString());
         //接收消息 版本2.0 使用自动解码器
         System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())+ "接收消息:"+msg);
-        //使用编码器后不再使用手动编码.但是我觉得手动编码存在意义,对于某一些格式,或者某一些特定情况,我猜测我需要手动的处理
-//        //通知客户端链消息发送成功
+        //群发给客户端
         String str = "服务端收到:" + new Date() + " " + msg + "\r\n";
-//        ByteBuf buf = Unpooled.buffer(str.getBytes().length);
-//        //使用GBK 进行编码
-//        buf.writeBytes(str.getBytes("GBK"));
         //推送给客户端
-        ctx.writeAndFlush(str);
+        ChannelHandler.channelGroup.writeAndFlush(str);
     }
 
     /**
