@@ -10,6 +10,7 @@ import io.netty.handler.codec.Delimiters;
 import io.netty.handler.codec.FixedLengthFrameDecoder;
 import io.netty.handler.codec.LineBasedFrameDecoder;
 import io.netty.handler.codec.string.StringDecoder;
+import io.netty.handler.codec.string.StringEncoder;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
@@ -32,6 +33,8 @@ public class MyChannelInitializer extends ChannelInitializer<SocketChannel> {
         // socketChannel.pipeline().addLast(new FixedLengthFrameDecoder(4));
         // 解码转String,注意调整自己的编码格式GBK , UTF-8
         socketChannel.pipeline().addLast(new StringDecoder(Charset.forName("GBK")));
+        // 编码转String, 注意调整自己的编码格式GBK , UTF-8
+        socketChannel.pipeline().addLast(new StringEncoder(Charset.forName("GBK")));
         //添加实现
         socketChannel.pipeline().addLast(new MyServerHandler());
 

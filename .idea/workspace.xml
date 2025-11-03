@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f50d8206-3ea1-4033-a8e9-cad02ac82a33" name="NettyServer收发数据" comment="NettyServer收发数据">
+    <list default="true" id="f50d8206-3ea1-4033-a8e9-cad02ac82a33" name="NettyServer字符串编码器" comment="NettyServer字符串编码器">
       <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyChannelInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyServerHandler.java" afterDir="false" />
     </list>
@@ -194,7 +194,7 @@
       <workItem from="1757477708750" duration="4326000" />
       <workItem from="1757652254505" duration="600000" />
       <workItem from="1761714051545" duration="2544000" />
-      <workItem from="1761876706202" duration="28546000" />
+      <workItem from="1761876706202" duration="28945000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 尚硅谷-Java-数组">
       <option name="closed" value="true" />
@@ -268,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762138018071</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="NettyServer 收发数据">
+      <option name="closed" value="true" />
+      <created>1762138683996</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1762138683996</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +291,8 @@
     <MESSAGE value="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞" />
     <MESSAGE value="NettyServer接收器" />
     <MESSAGE value="NettyServer接收器 解码器 换行器 半包粘包解决" />
-    <option name="LAST_COMMIT_MESSAGE" value="NettyServer接收器 解码器 换行器 半包粘包解决" />
+    <MESSAGE value="NettyServer 收发数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="NettyServer 收发数据" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
