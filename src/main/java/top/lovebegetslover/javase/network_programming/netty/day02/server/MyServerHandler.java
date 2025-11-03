@@ -26,9 +26,6 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
         System.out.println("连接IP"+channel.localAddress().getHostString());
         System.out.println("连接Port"+channel.localAddress().getPort());
         System.out.println("连接完成");
-        //通知客户端连接建立成功
-        String str = "连接成功" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())+ " " + channel.localAddress().getHostString() + "\r\n";
-        ctx.writeAndFlush(str);
     }
 
     /**
@@ -47,10 +44,9 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         //接收消息 版本2.0 使用自动解码器
         System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())+ "接收消息:"+msg);
-        //群发给客户端
-        String str = "服务端收到:" + new Date() + " " + msg + "\r\n";
         //推送给客户端
-        ChannelHandler.channelGroup.writeAndFlush(str);
+        ChannelHandler.channelGroup.writeAndFlush("hi i am ok ");
+//        ctx.writeAndFlush(msg);
     }
 
     /**
