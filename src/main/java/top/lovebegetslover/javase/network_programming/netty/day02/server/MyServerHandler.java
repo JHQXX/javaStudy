@@ -1,6 +1,7 @@
 package top.lovebegetslover.javase.network_programming.netty.day02.server;
 
 import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.socket.SocketChannel;
@@ -23,17 +24,54 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
         System.out.println("连接IP"+channel.localAddress().getHostString());
         System.out.println("连接Port"+channel.localAddress().getPort());
         System.out.println("连接完成");
+        //通知客户端连接建立成功
+        String str = "连接成功" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())+ " " + channel.localAddress().getHostString() + "\r\n";
+        ByteBuf buf = Unpooled.buffer(str.getBytes().length);
+        //使用GBK进行编码
+        buf.writeBytes(str.getBytes("GBK"));
+        //推向客户端
+        ctx.writeAndFlush(buf);
+    }
+
+    /**
+     * 客户端主动断开服务器的连接后,就是这个通道不活跃了,调用了这个方法
+     * @param ctx
+     * @throws Exception
+     */
+    @Override
+    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+        System.out.println("客户端断开连接"+ctx.channel().localAddress().toString());
     }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        //接收消息
+        //接收消息 版本1.0 无自动解码器
 //        ByteBuf buf = (ByteBuf) msg;
 //        byte[] bytes = new byte[buf.readableBytes()];
 //        buf.readBytes(bytes);
 //        System.out.println("接收到消息"+new Date());
 //        System.out.println(new String (bytes, Charset.forName("GBK")));
 //        System.out.println("接收到消息"+new Date()+" "+buf.toString());
+        //接收消息 版本2.0 使用自动解码器
         System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())+ "接收消息:"+msg);
+        //通知客户端链消息发送成功
+        String str = "服务端收到:" + new Date() + " " + msg + "\r\n";
+        ByteBuf buf = Unpooled.buffer(str.getBytes().length);
+        //使用GBK 进行编码
+        buf.writeBytes(str.getBytes("GBK"));
+        //推送给客户端
+        ctx.writeAndFlush(buf);
+    }
+
+    /**
+     * 异常捕获,当发生异常的时候,可以做一些相当的处理,比如有日志,关闭连接等
+     * @param ctx
+     * @param cause
+     * @throws Exception
+     */
+    @Override
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+        ctx.close();
+        System.out.println("异常:\r\n"+cause.getMessage());
     }
 }

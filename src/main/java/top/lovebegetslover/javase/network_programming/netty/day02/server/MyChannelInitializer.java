@@ -35,6 +35,10 @@ public class MyChannelInitializer extends ChannelInitializer<SocketChannel> {
         //添加实现
         socketChannel.pipeline().addLast(new MyServerHandler());
 
+
+
+
+
 //        错误的尝试
 //        socketChannel.pipeline().addLast(new SimpleChannelInboundHandler<Byte>() {
 //            @Override

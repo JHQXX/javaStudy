@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f50d8206-3ea1-4033-a8e9-cad02ac82a33" name="NettyServer字符串解码器" comment="NettyServer字符串解码器">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f50d8206-3ea1-4033-a8e9-cad02ac82a33" name="NettyServer收发数据" comment="NettyServer收发数据">
       <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyChannelInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyServerHandler.java" afterDir="false" />
     </list>
@@ -41,19 +40,6 @@
     &quot;accountId&quot;: &quot;1c63b4eb-78e0-4ec8-bfde-590b40504982&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="6" end1="8" start2="6" end2="8" changelist="f50d8206-3ea1-4033-a8e9-cad02ac82a33" />
-        <range start1="9" end1="10" start2="9" end2="10" changelist="f50d8206-3ea1-4033-a8e9-cad02ac82a33" />
-        <range start1="43" end1="43" start2="43" end2="56" changelist="f50d8206-3ea1-4033-a8e9-cad02ac82a33" />
-        <range start1="197" end1="198" start2="210" end2="211" changelist="f50d8206-3ea1-4033-a8e9-cad02ac82a33" />
-        <range start1="255" end1="256" start2="268" end2="277" changelist="f50d8206-3ea1-4033-a8e9-cad02ac82a33" />
-        <range start1="268" end1="269" start2="289" end2="291" changelist="f50d8206-3ea1-4033-a8e9-cad02ac82a33" />
-        <range start1="278" end1="283" start2="300" end2="300" changelist="ad13bd04-9962-4a2f-88b2-397ce585739f" />
-      </ranges>
-    </file>
-  </component>
   <component name="PerforceDirect.Settings">
     <option name="CHARSET" value="无" />
   </component>
@@ -208,7 +194,7 @@
       <workItem from="1757477708750" duration="4326000" />
       <workItem from="1757652254505" duration="600000" />
       <workItem from="1761714051545" duration="2544000" />
-      <workItem from="1761876706202" duration="27569000" />
+      <workItem from="1761876706202" duration="28546000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 尚硅谷-Java-数组">
       <option name="closed" value="true" />
@@ -274,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762132806602</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="NettyServer接收器 解码器 换行器 半包粘包解决">
+      <option name="closed" value="true" />
+      <created>1762138018071</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1762138018071</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +282,8 @@
     <MESSAGE value="基础入门 NettyServer" />
     <MESSAGE value="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞" />
     <MESSAGE value="NettyServer接收器" />
-    <option name="LAST_COMMIT_MESSAGE" value="NettyServer接收器" />
+    <MESSAGE value="NettyServer接收器 解码器 换行器 半包粘包解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="NettyServer接收器 解码器 换行器 半包粘包解决" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
