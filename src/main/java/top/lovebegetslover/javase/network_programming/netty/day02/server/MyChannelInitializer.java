@@ -5,8 +5,14 @@ import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import io.netty.channel.socket.SocketChannel;
+import io.netty.handler.codec.DelimiterBasedFrameDecoder;
+import io.netty.handler.codec.Delimiters;
+import io.netty.handler.codec.FixedLengthFrameDecoder;
+import io.netty.handler.codec.LineBasedFrameDecoder;
+import io.netty.handler.codec.string.StringDecoder;
 
 import java.nio.ByteBuffer;
+import java.nio.charset.Charset;
 
 /**
  * @Author: Lee
@@ -17,13 +23,18 @@ public class MyChannelInitializer extends ChannelInitializer<SocketChannel> {
 
     @Override
     protected void initChannel(SocketChannel socketChannel) throws Exception {
-        System.out.println("开始连接");
-        System.out.println("ip"+ socketChannel.localAddress().getAddress());
-        System.out.println("port"+ socketChannel.localAddress().getPort());
-        System.out.println("连接完毕");
-
-        //在管道中添加我们自己的接收数据实现方法
+        /*解码器*/
+        // 基于换行符
+         socketChannel.pipeline().addLast(new LineBasedFrameDecoder(1024));
+        // 基于指定字符串【换行符，这样的功能等同于LineBasedFrameDecoder】
+        // socketChannel.pipeline().addLast(new DelimiterBasedFrameDecoder(1024, false, Delimiters.lineDelimiter()));
+        // 基于最大长度
+        // socketChannel.pipeline().addLast(new FixedLengthFrameDecoder(4));
+        // 解码转String,注意调整自己的编码格式GBK , UTF-8
+        socketChannel.pipeline().addLast(new StringDecoder(Charset.forName("GBK")));
+        //添加实现
         socketChannel.pipeline().addLast(new MyServerHandler());
+
 //        错误的尝试
 //        socketChannel.pipeline().addLast(new SimpleChannelInboundHandler<Byte>() {
 //            @Override
