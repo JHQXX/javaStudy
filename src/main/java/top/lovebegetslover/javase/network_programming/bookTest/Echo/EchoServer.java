@@ -48,7 +48,7 @@ public class EchoServer {
                         @Override
                         protected void initChannel(Channel channel) throws Exception {
                             //添加一个EchoServerHandler 到 Channel 的 ChannelPipeline 中
-                            //因为我们标记了@Shareable注解，所有我们总是可以用同一个实例，所以可以final
+                            //因为我们标记了@Shareable注解，所有我 们总是可以用同一个实例，所以可以final
                             channel.pipeline().addLast(echoServerHandler);
                         }
                     });

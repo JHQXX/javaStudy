@@ -7,6 +7,7 @@ import java.net.Socket;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 /**
  * 服务端 同步阻塞
@@ -38,7 +39,7 @@ public class BioServer extends  Thread{
                 //拿取消息
                 SocketChannel socketChannel = serverChannel.accept();
                 //服务器处理器  -- 用于服务器处理事务
-                BioServerHandler handler = new BioServerHandler(socketChannel, Charset.forName("utf-8"));
+                BioServerHandler handler = new BioServerHandler(socketChannel, StandardCharsets.UTF_8);
                 handler.start();
             }
 

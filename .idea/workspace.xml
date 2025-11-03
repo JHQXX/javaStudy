@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f50d8206-3ea1-4033-a8e9-cad02ac82a33" name="NettyServer群发消息" comment="NettyServer群发消息">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/ChannelHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyChannelInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/bookTest/Echo/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/bookTest/Echo/EchoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/client/BioClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/server/BioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/server/BioServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/client/MyChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/client/MyChannelInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/client/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/client/NettyClient.java" afterDir="false" />
     </list>
-    <list id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,9 +40,6 @@
     &quot;accountId&quot;: &quot;1c63b4eb-78e0-4ec8-bfde-590b40504982&quot;
   }
 }</component>
-  <component name="PerforceDirect.Settings">
-    <option name="CHARSET" value="无" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -79,6 +75,7 @@
     "应用程序.ArrayExerStudentLeve.executor": "Debug",
     "应用程序.BioServer.executor": "Debug",
     "应用程序.ChannelFutureTest.executor": "Run",
+    "应用程序.NettyClient.executor": "Run",
     "应用程序.NettyServer.executor": "Debug",
     "应用程序.NioServer.executor": "Run"
   }
@@ -95,20 +92,7 @@
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\array" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.NettyServer">
-    <configuration name="BioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.bio.client.BioClient" />
-      <module name="javaStudy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day01.bio.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.NettyClient">
     <configuration name="BioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.bio.server.BioServer" />
       <module name="javaStudy" />
@@ -128,6 +112,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.bookTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day02.client.NettyClient" />
+      <module name="javaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day02.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.NettyClient" />
         <item itemvalue="应用程序.NettyServer" />
         <item itemvalue="应用程序.NioServer" />
         <item itemvalue="应用程序.ChannelFutureTest" />
         <item itemvalue="应用程序.BioServer" />
-        <item itemvalue="应用程序.BioClient" />
       </list>
     </recent_temporary>
   </component>

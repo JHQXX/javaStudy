@@ -2,9 +2,9 @@ package top.lovebegetslover.javase.network_programming.netty.day01.bio.client;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.net.Socket;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 /**
  * 客户端
@@ -19,7 +19,7 @@ public class BioClient {
             //创建信息
 //            Socket socket = new Socket("192.168.1.116", 4399);
             System.out.println("bio_client start done | 正在启动");
-            BioClientHandler bioClientHandler = new BioClientHandler(socketChannel, Charset.forName("utf-8"));
+            BioClientHandler bioClientHandler = new BioClientHandler(socketChannel, StandardCharsets.UTF_8);
             //启动
             bioClientHandler.start();
         } catch (IOException e) {
