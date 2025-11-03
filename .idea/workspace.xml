@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f50d8206-3ea1-4033-a8e9-cad02ac82a33" name="NettyClient 半包粘包处理，编码解码处理，收发数据方式" comment="NettyClient半包粘包处理、编码解码处理、收发数据方式">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/codec/MyDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/codec/MyEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day03/client/MyChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day03/client/MyInMsgHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day03/client/MyOutMsgHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day03/client/NettyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day03/server/ChannelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day03/server/MyChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day03/server/MyServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day03/server/NettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyChannelInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/NettyServer.java" afterDir="false" />
     </list>
@@ -58,7 +64,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/programming/lee/javaStudy",
+    "last_opened_file_path": "D:/project_lee/javaStudy/src/main/java/top/lovebegetslover/javase/network_programming/netty/day03",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,48 +84,27 @@
     "应用程序.ChannelFutureTest.executor": "Run",
     "应用程序.NettyClient.executor": "Run",
     "应用程序.NettyServer.executor": "Debug",
-    "应用程序.NioServer.executor": "Run"
+    "应用程序.NioServer.executor": "Run",
+    "应用程序.top.lovebegetslover.javase.network_programming.netty.day03.client.NettyClient.executor": "Run",
+    "应用程序.top.lovebegetslover.javase.network_programming.netty.day03.server.NettyServer.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\network_programming\netty\day03" />
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase" />
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\study04_thread" />
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\exception" />
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\oop" />
-      <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\array" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\array" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.lovebegetslover.javase.network_programming.netty.day03.client" />
+    </key>
   </component>
-  <component name="RunManager" selected="应用程序.NettyServer">
-    <configuration name="BioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.bio.server.BioServer" />
-      <module name="javaStudy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day01.bio.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChannelFutureTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.bookTest.ChannelFutureTest" />
-      <module name="javaStudy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.bookTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.top.lovebegetslover.javase.network_programming.netty.day03.client.NettyClient">
     <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day02.client.NettyClient" />
       <module name="javaStudy" />
@@ -159,13 +144,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="top.lovebegetslover.javase.network_programming.netty.day03.client.NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day03.client.NettyClient" />
+      <module name="javaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day03.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="top.lovebegetslover.javase.network_programming.netty.day03.server.NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day03.server.NettyServer" />
+      <module name="javaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day03.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.top.lovebegetslover.javase.network_programming.netty.day03.client.NettyClient" />
+        <item itemvalue="应用程序.top.lovebegetslover.javase.network_programming.netty.day03.server.NettyServer" />
         <item itemvalue="应用程序.NettyServer" />
         <item itemvalue="应用程序.NettyClient" />
         <item itemvalue="应用程序.NioServer" />
-        <item itemvalue="应用程序.ChannelFutureTest" />
-        <item itemvalue="应用程序.BioServer" />
       </list>
     </recent_temporary>
   </component>
@@ -327,11 +338,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/top/lovebegetslover/Main.java</url>
           <line>17</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day01/bio/ChannelAdapter.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

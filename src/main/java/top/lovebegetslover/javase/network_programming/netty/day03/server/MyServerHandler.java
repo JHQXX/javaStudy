@@ -1,10 +1,9 @@
-package top.lovebegetslover.javase.network_programming.netty.day02.server;
+package top.lovebegetslover.javase.network_programming.netty.day03.server;
 
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.socket.SocketChannel;
-
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -43,8 +42,8 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         //接收消息 版本2.0 使用自动解码器
         System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())+ "接收消息:"+msg);
-        //推送给客户端
-        ChannelHandler.channelGroup.writeAndFlush("hi I'm ok");
+        //通知客户端链消息发送成功
+        String str = "随机数：" + Math.random() * 10 + "\r\n";
 //        ctx.writeAndFlush(msg);
     }
 

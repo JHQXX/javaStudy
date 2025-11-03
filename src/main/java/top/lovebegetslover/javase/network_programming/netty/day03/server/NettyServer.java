@@ -1,4 +1,4 @@
-package top.lovebegetslover.javase.network_programming.netty.day02.server;
+package top.lovebegetslover.javase.network_programming.netty.day03.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -13,7 +13,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  **/
 public class NettyServer {
     public static void main(String[] args) {
-        new NettyServer().bing(4399);
+        new NettyServer().bing(4398);
     }
 
     public void bing(int port){
