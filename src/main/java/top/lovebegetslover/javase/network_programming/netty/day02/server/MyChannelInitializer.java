@@ -21,6 +21,9 @@ public class MyChannelInitializer extends ChannelInitializer<SocketChannel> {
         System.out.println("ip"+ socketChannel.localAddress().getAddress());
         System.out.println("port"+ socketChannel.localAddress().getPort());
         System.out.println("连接完毕");
+
+        //在管道中添加我们自己的接收数据实现方法
+        socketChannel.pipeline().addLast(new MyServerHandler());
 //        错误的尝试
 //        socketChannel.pipeline().addLast(new SimpleChannelInboundHandler<Byte>() {
 //            @Override

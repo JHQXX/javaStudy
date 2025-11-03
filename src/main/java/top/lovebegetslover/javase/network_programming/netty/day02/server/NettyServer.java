@@ -23,7 +23,7 @@ public class NettyServer {
         try {
         ServerBootstrap b = new ServerBootstrap();
         b.group(parentGroup, childGroup)
-                .channel(NioServerSocketChannel.class)
+                .channel(NioServerSocketChannel.class)//非阻塞模式
                 .option(ChannelOption.SO_BACKLOG,128)
                 .childHandler(new MyChannelInitializer());
             ChannelFuture f = b.bind(port).sync();
