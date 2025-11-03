@@ -1,10 +1,7 @@
 package top.lovebegetslover.javase.network_programming.bookTest.Echo;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
@@ -46,7 +43,8 @@ public class EchoServer {
                     .group(group)
                     .channel(NioServerSocketChannel.class) //指定NIO传输的Channel
                     .localAddress(new InetSocketAddress(port)) // 使用指定的端口设置套接字地址
-                    .childHandler(new ChannelInitializer<>() { //添加一个EchoServerHandler 到 Channel 的 ChannelPipeline 中
+                    .childHandler(new ChannelInitializer<>() {
+                        //添加一个EchoServerHandler 到 Channel 的 ChannelPipeline 中
                         @Override
                         protected void initChannel(Channel channel) throws Exception {
                             //添加一个EchoServerHandler 到 Channel 的 ChannelPipeline 中

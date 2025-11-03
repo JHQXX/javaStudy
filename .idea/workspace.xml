@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" name="nio" comment="nio 实现">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/bookTest/BIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/bookTest/ChannelFutureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/MyChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/netty/day02/server/NettyServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/bookTest/Echo/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/lovebegetslover/javase/network_programming/bookTest/Echo/EchoServer.java" afterDir="false" />
     </list>
     <list id="ad13bd04-9962-4a2f-88b2-397ce585739f" name="更改" comment="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
@@ -36,31 +36,36 @@
     &quot;assignee&quot;: &quot;JHQXX&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/JHQXX/javaStudy.git",
-    "accountId": "1c63b4eb-78e0-4ec8-bfde-590b40504982"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JHQXX/javaStudy.git&quot;,
+    &quot;accountId&quot;: &quot;1c63b4eb-78e0-4ec8-bfde-590b40504982&quot;
   }
-}]]></component>
+}</component>
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="6" end1="15" start2="6" end2="10" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="19" end1="25" start2="14" end2="14" changelist="ad13bd04-9962-4a2f-88b2-397ce585739f" />
-        <range start1="91" end1="91" start2="80" end2="81" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="106" end1="107" start2="96" end2="97" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="120" end1="122" start2="110" end2="112" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="125" end1="126" start2="115" end2="116" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="133" end1="135" start2="123" end2="125" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="138" end1="139" start2="128" end2="129" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="146" end1="148" start2="136" end2="138" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="151" end1="152" start2="141" end2="142" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="174" end1="174" start2="164" end2="165" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="178" end1="179" start2="169" end2="169" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="205" end1="206" start2="195" end2="196" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="231" end1="232" start2="221" end2="238" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="240" end1="241" start2="246" end2="249" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
-        <range start1="249" end1="254" start2="257" end2="257" changelist="ad13bd04-9962-4a2f-88b2-397ce585739f" />
+        <range start1="7" end1="9" start2="7" end2="9" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="10" end1="11" start2="10" end2="11" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="38" end1="42" start2="38" end2="42" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="43" end1="44" start2="43" end2="44" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="47" end1="63" start2="47" end2="68" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="104" end1="104" start2="109" end2="110" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="119" end1="122" start2="125" end2="128" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="125" end1="126" start2="131" end2="132" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="133" end1="135" start2="139" end2="141" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="138" end1="139" start2="144" end2="145" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="146" end1="148" start2="152" end2="154" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="151" end1="152" start2="157" end2="158" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="159" end1="161" start2="165" end2="167" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="164" end1="165" start2="170" end2="171" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="187" end1="188" start2="193" end2="194" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="189" end1="189" start2="195" end2="196" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="191" end1="192" start2="198" end2="198" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="218" end1="219" start2="224" end2="225" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="260" end1="261" start2="266" end2="275" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="271" end1="272" start2="285" end2="287" changelist="e0ab0b1f-b74c-4f38-9bb0-1f0c8595bd0e" />
+        <range start1="281" end1="286" start2="296" end2="296" changelist="ad13bd04-9962-4a2f-88b2-397ce585739f" />
       </ranges>
     </file>
   </component>
@@ -102,6 +107,7 @@
     "应用程序.ArrayExerStudentLeve.executor": "Debug",
     "应用程序.BioServer.executor": "Debug",
     "应用程序.ChannelFutureTest.executor": "Run",
+    "应用程序.NettyServer.executor": "Debug",
     "应用程序.NioServer.executor": "Run"
   }
 }]]></component>
@@ -117,20 +123,7 @@
       <recent name="D:\project_lee\javaStudy\src\main\java\top\lovebegetslover\javase\array" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ChannelFutureTest">
-    <configuration name="AioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.aio.client.AioClient" />
-      <module name="javaStudy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day01.aio.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.NettyServer">
     <configuration name="BioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.bio.client.BioClient" />
       <module name="javaStudy" />
@@ -170,6 +163,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day02.server.NettyServer" />
+      <module name="javaStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lovebegetslover.javase.network_programming.netty.day02.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.lovebegetslover.javase.network_programming.netty.day01.nio.server.NioServer" />
       <module name="javaStudy" />
@@ -185,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.ChannelFutureTest" />
+        <item itemvalue="应用程序.NettyServer" />
         <item itemvalue="应用程序.NioServer" />
+        <item itemvalue="应用程序.ChannelFutureTest" />
         <item itemvalue="应用程序.BioServer" />
         <item itemvalue="应用程序.BioClient" />
-        <item itemvalue="应用程序.AioClient" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +222,7 @@
       <workItem from="1757477708750" duration="4326000" />
       <workItem from="1757652254505" duration="600000" />
       <workItem from="1761714051545" duration="2544000" />
-      <workItem from="1761876706202" duration="12628000" />
+      <workItem from="1761876706202" duration="22627000" />
     </task>
     <task id="LOCAL-00001" summary="feat : 尚硅谷-Java-数组">
       <option name="closed" value="true" />
@@ -258,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761892472929</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="book 学习资料提交">
+      <option name="closed" value="true" />
+      <created>1761979508501</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1761979508501</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +283,8 @@
     <MESSAGE value="feat : aio" />
     <MESSAGE value="fix : 修复Netty适配器 socketChannel 为空报错原因：这里为啥要用socket 而不是socketChannel 是因为 socket 是 阻塞的 而 socketChannel 是非阻塞的 混用aip bio是同步阻塞 应该使用socket 如果要使用socketChannel 那么需要给默认配置configureBlocking改为阻塞" />
     <MESSAGE value="nio 实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="nio 实现" />
+    <MESSAGE value="book 学习资料提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="book 学习资料提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
