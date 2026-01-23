@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5aa7605-4904-4a63-8522-236aa525da15" name="Changes" comment="feat : smile_spring init">
+      <change afterPath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/_01volatile_test/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/_01volatile_test/VolatileAtomicityDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/_02synchronized_test/_00method_synchronized.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/_02synchronized_test/_01SynchronizedDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/ConcurrencyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/_00context_switching/ConcurrencyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/DeadLockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/_00context_switching/DeadLockDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/VolatileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/_01volatile_test/VolatileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/src/main/java/cn/jhqxx/concurrency/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/cn/jhqxx/concurrency/ConcurrencyTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/cn/jhqxx/concurrency/ConcurrencyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/cn/jhqxx/concurrency/DeadLockDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/cn/jhqxx/concurrency/DeadLockDemo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/cn/jhqxx/concurrency/DeadLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/cn/jhqxx/concurrency/VolatileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaCore/target/classes/cn/jhqxx/concurrency/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore/target/classes/cn/jhqxx/concurrency/test.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="spring" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="386YhpTWEWyqqfq6HpS8p90bypv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.VolatileAtomicityDemo.executor": "Run",
+    "Application._00method_synchronized.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "javaSE",
+    "last_opened_file_path": "/Users/lizhi/ideaProjects/javaStudy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/lizhi/ideaProjects/javaStudy/smile_spring/src/main/java/cn/jhqxx/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application._00method_synchronized">
+    <configuration name="VolatileAtomicityDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.jhqxx.concurrency._01volatile_test.VolatileAtomicityDemo" />
+      <module name="JavaCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.jhqxx.concurrency._01volatile_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_00method_synchronized" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.jhqxx.concurrency._02synchronized_test._00method_synchronized" />
+      <module name="JavaCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.jhqxx.concurrency._02synchronized_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="smile_spring" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="smile_spring" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application._00method_synchronized" />
+        <item itemvalue="Application.VolatileAtomicityDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.29188.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.29188.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5aa7605-4904-4a63-8522-236aa525da15" name="Changes" comment="" />
+      <created>1768121609875</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768121609875</updated>
+      <workItem from="1768121611196" duration="11996000" />
+      <workItem from="1768553313006" duration="3915000" />
+      <workItem from="1768827986061" duration="853000" />
+      <workItem from="1768828952639" duration="49000" />
+      <workItem from="1768829015196" duration="21507000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat : 并发编程的学习">
+      <option name="closed" value="true" />
+      <created>1768121811258</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768121811258</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat : javaSe项目提交">
+      <option name="closed" value="true" />
+      <created>1768553343392</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768553343392</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat : main 主分支 啥也不想放">
+      <option name="closed" value="true" />
+      <created>1768553490692</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768553490692</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat : smile_spring init">
+      <option name="closed" value="true" />
+      <created>1768828088658</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768828088658</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="javaSE" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat : 并发编程的学习" />
+    <MESSAGE value="feat : javaSe项目提交" />
+    <MESSAGE value="feat : main 主分支 啥也不想放" />
+    <MESSAGE value="feat : smile_spring init" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : smile_spring init" />
+  </component>
+</project>

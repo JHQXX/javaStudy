@@ -1,4 +1,4 @@
-package cn.jhqxx.concurrency;
+package cn.jhqxx.concurrency._01volatile_test;
 
 
 /**
